@@ -1,0 +1,12 @@
+/* All styles for your header Components live here */
+
+.HeaderContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0rem;
+
+    img {
+        flex: 1%;
+    }
+    
+}
