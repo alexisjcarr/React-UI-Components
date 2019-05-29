@@ -1,18 +1,15 @@
-import React, { Component } from 'react';
-import './Button.scss';
+import React from "react";
+import "./Button.scss";
 
-class NumberButton extends Component {
-    constructor(props) {
-        super(props);
-    }
-
-    render() {
-        return ( 
-            <button onClick={() => this.props.onClick(this.props.num)} style = {{backgroundColor: this.props.color, width: this.props.width}}>
-                {this.props.num}
-            </button>
-        );
-    }
-}
+const NumberButton = props => {
+  return (
+    <button
+      onClick={() => props.onClick(props.num)}
+      style={{ backgroundColor: props.color, width: props.width }}
+    >
+      {props.num}
+    </button>
+  );
+};
 
 export default NumberButton;
