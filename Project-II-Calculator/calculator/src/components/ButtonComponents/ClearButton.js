@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./Button.scss";
 
-const ActionButton = props => {
+const ClearButton = props => {
   return (
     <button
       onClick={props.onClear}
@@ -16,4 +16,4 @@ const ActionButton = props => {
   );
 };
 
-export default ActionButton;
+export default ClearButton;
