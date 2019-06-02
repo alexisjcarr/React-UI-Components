@@ -1,10 +1,10 @@
 import React from "react";
 import "./Button.scss";
 
-const ActionButton = props => {
+const ClearButton = props => {
   return (
     <button
-      onClick={() => props.onAction(props.action)}
+      onClick={props.onClear}
       style={{
         backgroundColor: props.color,
         width: props.width,
@@ -16,4 +16,4 @@ const ActionButton = props => {
   );
 };
 
-export default ActionButton;
+export default ClearButton;
